@@ -1,0 +1,292 @@
+/* import the font using @font-face */
+@font-face {
+    font-family: 'Manrope';
+    src: local('Manrope'), url('../fonts/Manrope/Manrope-VariableFont_wght.ttf')
+   }
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+body{
+    overflow-y: auto;
+}
+/* color for the navbar container */
+nav.navbar{
+    padding: 20px 40px 20px 40px;
+    background-color: teal;
+}
+/* texts that uses font manrope */
+ul.footerList, ul.weibo, p#patent, p#name, a.nav-link, p#myOffice, button.btn{
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    color: #ffffff;
+}
+/* texts that uses font poppins */
+h3#bottomHeader{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+}
+/* underline for navigation active */
+a#active{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+/* underline for bottom header */
+u#wordTrue, u#wordPotential{
+    text-underline-offset: 15px;
+    text-decoration-color: #F6DBA0;
+}
+/* profile contacts container */
+div.profileContacts{
+    background-color: #F6DBA0;
+    padding: 10px 40px 10px 40px;
+    margin: auto;
+}
+/* bottom content container */
+div.bottomContent{
+    background-color: teal;
+    padding: 50px 150px 50px 150px;
+}
+p#patent{
+    color: #007377;
+}
+p#name{
+    color:black !important;
+    font-weight: bold;
+    margin: 15px 0 0 15px;
+}
+ul.footerList, ul.weibo{
+    font-weight: bold;
+    color: black;
+    padding-right: 10px;
+    column-gap: 20px; 
+}
+img#weiboLogo{
+    width: 75px;
+    height: auto;
+}
+li#footerLi{
+    font-size: 15px;
+    margin-bottom: 10px; 
+}
+/* Setting for different screen sizes */
+@media screen and (max-width: 768px) {
+    /* CSS rules for screens smaller than or equal to 768px */
+    img#line,img#profileIcon,p#myOffice{
+        display: none;
+    }
+    img#logo{
+        width: 100%;
+        height: auto;
+    }
+    img#cart{
+        width: 70px;
+        height: 40px;
+    }
+    img#globe{
+        width: 60px;
+        height: 30px;
+    }
+    div.profileContacts{
+        background-color: #F6DBA0;
+        padding: 10px 40px 10px 40px;
+        margin: auto;
+    }
+    
+    img#contactIcons{
+        margin-top: 15px;
+        height: 35px;
+    }
+    img#cardImg{
+        max-width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+    u#wordTrue{
+        text-decoration: none;
+    }
+    div.bottomRow{
+        flex-direction: column;
+        align-items: center; /* Center align items horizontally */
+    }
+    div.footer{
+        padding: 0;
+    }
+    img#footerLogo{
+        width: 100%;
+        height: 120px;
+    }
+    li#footerItem{
+        text-decoration: none;
+    }
+    ul.footerList{
+        list-style-type: none; /* Remove bullets */
+        column-count: 1; /* Arrange in four columns */
+    }
+    ul.weibo{
+        list-style-type: none; /* Remove bullets */
+    }
+    div.patentRow{
+        padding: 0 100px 0 100px;
+    }
+    div.footerRow{
+        padding: 50px 100px 25px 100px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* CSS rules for screens between 768px and 1024px */
+    img#line,img#profileIcon,p#myOffice{
+        display: none;
+    }
+    img#logo{
+        width: 100%;
+        height: auto;
+        margin-right: 10px; 
+    }
+    a.nav-link{
+        margin-right: 10px;
+        font-size: 11px;
+        color: #ffffff;
+    }
+    img#cart{
+        width: 50px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    img#globe{
+        width: 35px;
+        height: 30px;
+    }
+    div.profileContacts{
+        background-color: #F6DBA0;
+        padding: 10px 40px 10px 40px;
+        margin: auto;
+    }
+    img#contactIcons{
+        margin-top: 15px;
+        height: 35px;
+    }
+    img#cardImg{
+        max-width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+    div.bottomRow{
+        flex-direction: column;
+        align-items: center; /* Center align items horizontally */
+    }
+    u#wordTrue{
+        text-decoration: none;
+    }
+    div.footer{
+        padding: 0;
+    }
+    img#footerLogo{
+        width: 100%;
+        height: 120px;
+    }
+    li#footerItem{
+        text-decoration: none;
+    }
+    ul.footerList{
+        padding: 0 0 0 0;
+        list-style-type: none; /* Remove bullets */
+        column-count: 1; /* Arrange in four columns */
+    }
+    ul.weibo{
+        list-style-type: none; /* Remove bullets */
+    }
+    div.patentRow{
+        padding: 0 100px 0 100px;
+        flex-direction: column;
+        align-items: center; /* Center align items horizontally */
+    }
+    div.footerRow{
+        flex-direction: column;
+        align-items: center; /* Center align items horizontally */
+        padding: 50px 100px 25px 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* CSS rules for screens larger than or equal to 1024px */
+    /* nav logo container */
+    nav div.logo {
+        margin-right: 20px;
+    }
+    /* nav logo */
+    img#logo{
+        width: 120px;
+        height: 70px;
+    }
+    /* nav link items */
+    a.nav-link{
+        margin-right: 20px;
+        font-size: 14px;
+        color: #ffffff;
+    }
+    /* nav profile icons */
+    img#line,img#profileIcon{
+        margin: 0 15px 0 0;
+        height: 20px;
+    }
+    /* cart icon margin */
+    img#cart{
+        margin:-14px 15px 0 0;
+        height: 30px;
+    }
+    /* globe icon */
+    img#globe{
+        height: 20px;
+    }
+    /* hamburger menu font */
+    button.btn{
+        font-size: 14px;
+    }
+    /* My office text */
+    p#myOffice{
+        margin: 0 20px 0 0;
+        font-size: 14px;
+    }
+    /* contact icons */
+    img#contactIcons{
+        height: 25px;
+        margin-top: 15px;
+    }
+    /* Bottom Cards */
+    img#cardImg{
+        max-width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+    u#wordPotential{
+        text-decoration: none;
+    }
+    div.footer{
+        padding: 0;
+    }
+    img#footerLogo{
+        width: 100%;
+        height: 120px;
+    }
+    li#footerItem{
+        text-decoration: none;
+    }
+    ul.footerList{
+        list-style-type: none; /* Remove bullets */
+        column-count: 2; /* Arrange in four columns */
+    }
+    ul.weibo{
+        list-style-type: none; /* Remove bullets */
+    }
+    div.patentRow{
+        padding: 0 100px 0 100px;
+    }
+    div.footerRow{
+        padding: 50px 100px 25px 100px;
+    }
+}   
