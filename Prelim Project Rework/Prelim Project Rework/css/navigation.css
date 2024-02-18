@@ -1,0 +1,125 @@
+/* Font Family Imports */
+@font-face {
+    font-family: 'Manrope';
+    src: local('Manrope'), url('../fonts/Manrope/Manrope-VariableFont_wght.ttf')
+   }
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+/* GLOBAL MEDIA CSS */
+/* texts that uses font manrope */
+a.nav-link, button.btn, a.footer-item, a.footer-copyright {
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    color: #ffffff;
+}
+/* nav container */
+div.nav-container{
+    background-color: teal;
+}
+/* navigation img logo */
+img#logo{
+    width: 125px;
+    height: 30px;
+}
+/* navigation links */
+a.nav-link{
+    color: white;
+    font-size: 12px;
+}
+/* underline for navigation active */
+a#active{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+/* images assets */
+img#cart{
+    width: 40px;
+    height: 25px;
+}
+img#profileIcon, img#line, img#globe, button.btn{
+    width: 20px;
+    height: 20px;
+}
+/* hide profile logo */
+#hide{
+    display: none;
+}
+/* footer texts */
+a.footer-item{
+    color: black !important;
+    font-weight: 700 !important;
+    font-style: bold !important;
+    font-size: 14px !important;
+}
+a.footer-copyright{
+    color: teal;
+    font-size: 16px;
+}
+a.footer-copyright-link{
+    color: black!important;
+}
+/* MEDIA SPECIFIC CSS */
+/* =<md - Devices with a maximum width of 991px  */
+@media (max-width: 991) { 
+    /* For nav links */
+    a.nav-link{
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    /* For profile sizes */
+    p.title{
+        margin: 0 0 0 10px;
+        font-size: 15px;
+    }
+    /* images */
+    img#globe, img#cart, img#logo{
+        width: 100%;
+        height: auto;
+    }
+    /* Footer Copyright Text */
+    a.footer-copyright{
+        color: teal;
+        font-size: 20px;
+    }
+}
+/* lg - Devices with a minimum width of 992px */
+@media (min-width: 992px) { 
+    /* For nav links */
+    a.nav-link{
+        font-size: 9px;
+        white-space: nowrap;
+    }
+    /* For profile sizes */
+    p.title{
+        margin: 3px 0 0 10px;
+        font-size: 10px;
+    }
+    #hide{
+        display: block;
+    }
+    img#footer{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* xl - Devices with a minimum width of 1200px */
+@media (min-width: 1200px) { 
+    /* For nav links */
+    a.nav-link{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    /* For profile sizes */
+    p.title{
+        margin: 3px 0 0 10px;
+        font-size: 12px;
+    }
+    img#footer{
+        width: 100%;
+        height: auto;
+    }
+}
