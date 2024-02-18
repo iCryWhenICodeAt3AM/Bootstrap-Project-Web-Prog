@@ -1,0 +1,117 @@
+/* Font Family Imports */
+@font-face {
+    font-family: 'Manrope';
+    src: local('Manrope'), url('../fonts/Manrope/Manrope-VariableFont_wght.ttf')
+   }
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+/* GLOBAL MEDIA CSS */
+/* texts that uses font manrope */
+a.nav-link, button.btn{
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    color: #ffffff;
+}
+/* texts that uses font poppins
+h3#bottomHeader{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+} */
+/* nav container */
+div.nav-container{
+    background-color: teal;
+}
+/* navigation img logo */
+img#logo{
+    width: 125px;
+    height: 30px;
+}
+/* navigation links */
+a.nav-link{
+    color: white;
+    font-size: 12px;
+}
+/* underline for navigation active */
+a#active{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+/* images assets */
+img#cart{
+    width: 40px;
+    height: 25px;
+}
+img#profileIcon, img#line, img#globe, button.btn{
+    width: 20px;
+    height: 20px;
+}
+#hide{
+    display: none;
+}
+/* MEDIA SPECIFIC CSS */
+/* =<md - Devices with a maximum width of 991px  */
+@media (max-width: 991) { 
+    /* For nav links */
+    a.nav-link{
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    /* For profile sizes */
+    p.title{
+        margin: 0 0 0 10px;
+        font-size: 15px;
+    }
+    img#globe, img#cart, img#logo{
+        width: 100%;
+        height: auto;
+    }
+}
+/* md - Devices with a minimum width of 768px */
+/* @media (min-width: 768px) {  
+    a.nav-link{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    p.title{
+        margin: 0 0 0 10px;
+        font-size: 15px;
+    }
+    img#globe, img#cart{
+        width: 100%;
+        height: auto;
+    }
+}*/
+/* lg - Devices with a minimum width of 992px */
+@media (min-width: 992px) { 
+    /* For nav links */
+    a.nav-link{
+        font-size: 9px;
+        white-space: nowrap;
+    }
+    /* For profile sizes */
+    p.title{
+        margin: 3px 0 0 10px;
+        font-size: 10px;
+    }
+    #hide{
+        display: block;
+    }
+}
+/* xl - Devices with a minimum width of 1200px */
+@media (min-width: 1200px) { 
+    /* For nav links */
+    a.nav-link{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    /* For profile sizes */
+    p.title{
+        margin: 3px 0 0 10px;
+        font-size: 12px;
+    }
+}
