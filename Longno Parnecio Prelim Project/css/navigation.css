@@ -1,0 +1,270 @@
+/* Font Family Imports */
+@font-face {
+    font-family: 'Manrope';
+    src: local('Manrope'), url('../fonts/Manrope/Manrope-VariableFont_wght.ttf')
+   }
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url('../fonts/Poppins/Poppins-SemiBold.ttf');
+}
+/* GLOBAL MEDIA CSS */
+div.cards{
+    background-color: #007377;
+}
+/* texts that uses font manrope */
+h1#cardstitle, p#imageright-1, p#imageleft, p#imageright, p#mission-Content, a.nav-link, button.btn, a.footer-item, a.footer-copyright, p#name{
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 500; 
+    color: #ffffff;
+}
+h5#cards, h4#imageright-1, div.our-Mission, h4#imageright, h4#imageleft{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h5#cards{
+    color: white;
+    font-weight: 600;
+}
+div.card{
+    border-radius: 5%;
+    background-color: #007377;
+    border-color: #c4c4c4;
+}
+h1#cardstitle{
+    font-weight: 600;
+}
+u#shown, u#hidden{
+    text-decoration: underline;
+    text-decoration-color: #F6DBA0;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20px; 
+    font-weight: 600;
+}
+
+h4#imageright{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #F6DBA0;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 15px; 
+    font-weight: 600;
+}
+h4#imageleft{
+    text-decoration: underline;
+    text-decoration-color: #007377;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 15px; 
+    font-weight: 600;
+}
+h4#imageright-1{
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #007377;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 15px; 
+    font-weight: 600;
+}
+p#imageright{
+    font-weight: lighter; /* Adjust the value as needed */
+}
+div.imageright{
+    background-color: #007377;
+}
+img#imageright{
+    width: 100%;
+    height: 100%;
+    margin-left: 12px;
+}
+div.imageright-1{
+    background-color: #F6DBA0;
+}
+p#imageright-1{
+    color: black;
+}
+img#imageright-1{
+    width: 100%;
+    height: 100%;
+    margin-left: 12px;
+}
+img#imageleft{
+    width: 100%;
+    height: 100%;
+    margin-left: -12px;
+}
+p#imageleft{
+    color: black;
+}
+p#mission-Content{
+    color: black;
+}
+
+/* nav container */
+div.nav-container{
+    background-color: teal;
+}
+/* navigation img logo */
+img#logo{
+    width: 125px;
+    height: 30px;
+}
+#mis-word {
+    text-decoration: underline;
+    text-decoration-color: #007377;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20px; 
+}
+/* navigation links */
+a.nav-link{
+    color: white;
+    font-size: 12px;
+}
+/* underline for navigation active */
+a#active{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+/* images assets */
+img#cart{
+    width: 40px;
+    height: 25px;
+}
+img#profileIcon, img#line, img#globe, button.btn{
+    width: 20px;
+    height: 20px;
+}
+/* hide profile logo */
+#hide{
+    display: none;
+}
+/* footer texts */
+a.footer-item{
+    color: black !important;
+    font-weight: 700 !important;
+    font-style: bold !important;
+    font-size: 14px !important;
+}
+a.footer-copyright{
+    color: teal;
+    font-size: 16px;
+}
+a.footer-copyright-link{
+    color: black!important;
+}
+/* Merging Assets */
+/* profile contacts container */
+div.profileContacts{
+    background-color: #F6DBA0;
+}
+p#name {
+    color: black;
+    font-weight: 700;
+
+}
+/* MEDIA SPECIFIC CSS */
+@media (max-width: 449px) { 
+    img#video-text{
+        top: 250px;
+        width: 250px;
+        height: 250px;
+    }
+    u#shown{
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 599px) { 
+    img#video-text{
+        top: 300px;
+        width: 350px;
+        height: 350px;
+    }
+}
+@media (min-width: 600px) and (max-width: 754px) { 
+    img#video-text{
+        top: 350px;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 755px) and (max-width: 991px) { 
+    /* For nav links */
+    a.nav-link{
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    /* For profile sizes */
+    p.title{
+        margin: 0 0 0 10px;
+        font-size: 15px;
+    }
+    u#hidden{
+        text-decoration: none;
+    }
+    img#video-text{
+        top: 400px;
+        width: 500px;
+        height: 500px;
+    }
+}
+/* lg - Devices with a minimum width of 992px */
+@media (min-width: 992px) and (max-width: 1199px){ 
+    /* For nav links */
+    a.nav-link{
+        font-size: 9px;
+        white-space: nowrap;
+    }
+    /* For profile sizes */
+    p.title{
+        margin: 3px 0 0 10px;
+        font-size: 10px;
+    }
+    u#hidden{
+        text-decoration: none;
+    }
+    img#footer{
+        width: 100%;
+        height: auto;
+    }    
+    img#video-text{
+        top: 450px;
+        width: 620px;
+        height: 620px;
+    }
+    div#hide{
+        display: block;
+    }
+}
+
+/* xl - Devices with a minimum width of 1200px */
+@media (min-width: 1200px) { 
+    /* For nav links */
+    a.nav-link{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    /* For profile sizes */
+    p.title{
+        margin: 3px 0 0 10px;
+        font-size: 12px;
+    }
+    img#footer{
+        width: 100%;
+        height: auto;
+    }
+    /* Potential Word */
+    u#hidden{
+        text-decoration: none;
+    }
+    div#hide{
+        display: block;
+    }
+    img#video-text{
+        top: 525px;
+        width: 620px;
+        height: 620px;
+    }
+
+}
