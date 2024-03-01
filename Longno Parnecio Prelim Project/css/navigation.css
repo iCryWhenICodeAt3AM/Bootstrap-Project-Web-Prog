@@ -57,6 +57,7 @@ h4#imageleft{
     text-decoration-thickness: 1px;
     text-underline-offset: 15px; 
     font-weight: 600;
+
 }
 h4#imageright-1{
     color: black;
@@ -68,6 +69,7 @@ h4#imageright-1{
 }
 p#imageright{
     font-weight: lighter; /* Adjust the value as needed */
+    width: 375px;
 }
 div.imageright{
     background-color: #007377;
@@ -82,6 +84,7 @@ div.imageright-1{
 }
 p#imageright-1{
     color: black;
+    width: 400px;
 }
 img#imageright-1{
     width: 100%;
@@ -95,6 +98,7 @@ img#imageleft{
 }
 p#imageleft{
     color: black;
+    width: 400px;
 }
 p#mission-Content{
     color: black;
@@ -158,6 +162,7 @@ div.profileContacts{
     background-color: #F6DBA0;
 }
 p#name {
+    left: -1000px;
     color: black;
     font-weight: 700;
 
@@ -268,3 +273,20 @@ p#name {
     }
 
 }
+    
+    .embed-responsive-item {
+      position: relative;
+      width: 1590px;
+
+    }
+    #profilePicture{
+        padding-top: 10px;
+        height: 50px;
+        width: 50px;
+
+    }
+    .ms-1{
+        height: 15px;
+        width: 10px;
+        padding-top: 5px;
+    }
