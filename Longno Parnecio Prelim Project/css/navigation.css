@@ -12,7 +12,7 @@ div.cards{
     background-color: #007377;
 }
 /* texts that uses font manrope */
-h1#cardstitle, p#imageright-1, p#imageleft, p#imageright, p#mission-Content, a.nav-link, button.btn, a.footer-item, a.footer-copyright, p#name{
+input, small, h1#cardstitle, p#imageright-1, p#imageleft, p#imageright, p#mission-Content, a.nav-link, a.footer-item, a.footer-copyright, p#name, h1.sign-in{
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 500; 
@@ -134,7 +134,7 @@ img#cart{
     width: 40px;
     height: 25px;
 }
-img#profileIcon, img#line, img#globe, button.btn{
+img#profileIcon, img#line, img#globe{
     width: 20px;
     height: 20px;
 }
@@ -281,9 +281,9 @@ p#name {
     }
     #profilePicture{
         padding-top: 10px;
-        height: 50px;
-        width: 50px;
-
+        max-height: 50px;
+        max-width: 50px;
+        border-radius: 25px;
     }
     .ms-1{
         height: 15px;
