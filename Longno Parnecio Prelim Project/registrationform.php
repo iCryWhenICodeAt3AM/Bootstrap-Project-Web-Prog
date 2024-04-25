@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="col-12 input-group">
                                         <span class="input-group-text" id="basic-addon1">Password&nbsp;</span>
-                                        <input type="password" class="form-control" id="password" name="Password" aria-label="Password" aria-describedby="basic-addon1" pattern="[^\s]+" title="Password must not contain white space" required>
+                                        <input type="password" class="form-control" id="password" name="Password" aria-label="Password" aria-describedby="basic-addon1" pattern="^(?=\S{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d\s]).*$" title="Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character." required>
                                     </div>
                                     <div id="password-strength" class="col-12 mb-3 text-white"></div>
                                     <div class="col-12 input-group">
