@@ -14,7 +14,7 @@
         <title>Sign-in</title>
     </head>
     <body> 
-        <div class="container" style="margin-top: 180px; margin-bottom: 50px;">
+        <div class="container" style="margin-top: 160px; margin-bottom: 70px;">
             <div class="row">
                 <div class="col-10 offset-1 pt-4 pb-4" style="background-color: teal; border-radius: 25px;">
                     <div class="container p-1">
