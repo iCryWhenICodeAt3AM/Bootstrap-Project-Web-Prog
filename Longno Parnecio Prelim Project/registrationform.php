@@ -94,17 +94,17 @@
                                     <div class="col-12">
                                         <div class="input-group">
                                             <div class="input-group-text">
-                                                <input class="form-check-input mt-0" type="radio" name="Gender" value="Male">
+                                                <input class="form-check-input mt-0" type="radio" name="Gender" value="Male" required>
                                             </div>
                                             <input type="text" class="form-control" value="Male" disabled>
                                             &nbsp;
                                             <div class="input-group-text">
-                                                <input class="form-check-input mt-0" type="radio" name="Gender" value="Female">
+                                                <input class="form-check-input mt-0" type="radio" name="Gender" value="Female" required>
                                             </div>
                                             <input type="text" class="form-control" value="Female" disabled>
                                             &nbsp;
                                             <div class="input-group-text">
-                                                <input class="form-check-input mt-0" type="radio" name="Gender" value="Others">
+                                                <input class="form-check-input mt-0" type="radio" name="Gender" value="Others" required>
                                             </div>
                                             <input type="text" class="form-control" value="Others" disabled>
                                         </div>

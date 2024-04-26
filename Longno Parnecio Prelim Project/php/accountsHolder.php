@@ -58,5 +58,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !isset($_POST['form_token'])) {
         $_SESSION['formData'] = $formData;
     }
     
-    echo "<script>console.log(".$formData.")</script>";
 }
