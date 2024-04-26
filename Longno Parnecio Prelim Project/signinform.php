@@ -4,9 +4,8 @@
     session_start();
     require("components/navbar.php");
     require("php/accountsHolder.php");
-    if($_SESSION["LoggedIn"]){
-        echo '<script language="javascript">window.location.href ="index.php"</script>';
-    }
+    require("php/logincheckforms.php");
+
 ?>
 <html lang="en">
     <head>
