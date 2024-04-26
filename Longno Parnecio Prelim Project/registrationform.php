@@ -3,6 +3,7 @@
 <?php 
     session_start();
     require("components/navbar.php");
+    require("php/logincheckforms.php");
 ?>
 <head>
     <meta charset="UTF-8">
@@ -42,7 +43,7 @@
                                     </div>
                                     <div class="col-12 input-group  mb-3">
                                         <span class="input-group-text" id="basic-addon1">Username</span>
-                                        <input type="text" class="form-control" name="Username" aria-label="Username" aria-describedby="basic-addon1" pattern="[^\s]+(_[^\s]+)*" title="Username must not contain spaces, and only underscores are allowed as special characters" required>
+                                        <input type="text" class="form-control" name="Username" aria-label="Username" aria-describedby="basic-addon1" pattern="[^\s]+(_[^\s]+)*" title="Username must not contain spaces, and only underscores are allowed as special characters" minlength="4" required>
                                     </div>
                                     <div class="col-12 input-group">
                                         <span class="input-group-text" id="basic-addon1">Password&nbsp;</span>

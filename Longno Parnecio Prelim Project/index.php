@@ -2,10 +2,7 @@
 <?php
     session_start();
     require("components/navbar.php");
-
-    if(isset($_SESSION["LoggedIn"]) && !$_SESSION["LoggedIn"]){
-        echo '<script language="javascript">window.location.href ="signinform.php"</script>';
-    }
+    require("php/logincheckmain.php");
 ?>
 <html lang="en">
     <head>
@@ -53,8 +50,7 @@
                 
             </div>
         </div>
-        <?php
-        ?>
+
         <!-- Video Embedded - START -->
         <div class="container-fluid">
             <div class="row">

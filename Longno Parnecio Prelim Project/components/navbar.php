@@ -1,5 +1,8 @@
 <!-- Navigation Bar - START -->
 <!-- Bootstrap CSS -->
+<?php
+    require("php/aboutusredirect.php");
+?>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- Master CSS -->
 <link rel="stylesheet" href="css/navigation.css">
@@ -13,7 +16,7 @@
         </button>
         <!-- Navbar Logo -->
         <div class="logo navbar-brand justify-content-center text-center mt-3 mb-3 ms-lg-4 col-4 col-md-7 col-md-7 order-1 col-lg-2 order-lg-1 col-xl-1">
-            <img src="images/troolife logo 1.svg" alt="troolife logo 1" id="logo" width="100%">
+            <a href="index.php"><img src="images/troolife logo 1.svg" alt="troolife logo 1" id="logo" width="100%"></a>
         </div>
         <!-- Collapsable Navigation List -->
         <div class="collapse navbar-collapse justify-content-center col-12 order-3 col-lg-6 order-lg-2 col-xl-4" id="navbarNavAltMarkup">
@@ -46,8 +49,8 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <!-- Dropdown items here -->
-                    <li><a class="dropdown-item" href="#rey">Rey Longno</a></li>
-                    <li><a class="dropdown-item" href="#about">Lloyd Mark P. Parnecio</a></li>
+                    <li><a class="dropdown-item" href="<?php echo $reyLink; ?>">Rey Longno</a></li>
+                    <li><a class="dropdown-item" href="<?php echo $lloydLink; ?>">Lloyd Mark P. Parnecio</a></li>
                     </ul>
                 </li>
             </div>
